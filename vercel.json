@@ -1,11 +1,14 @@
 {
   "functions": {
     "api/index.py": {
-      "runtime": "python3.9",
-      "maxDuration": 30
+      "runtime": "python3.9"
     }
   },
   "routes": [
+    {
+      "src": "/outfit-image",
+      "dest": "/api/index.py"
+    },
     {
       "src": "/(.*)",
       "dest": "/api/index.py"
